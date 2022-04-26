@@ -1,0 +1,26 @@
+
+//Global
+@import "mixins";
+@import "variables";
+@import "global";
+@import "../../node_modules/normalize.css/normalize.css";
+@import "../../node_modules/reset.css/reset.css";
+@import "../../node_modules/swiper/swiper-bundle.css";
+
+//Components
+
+@import "./components/header";
+@import "./components/hero";
+@import "./components/modal";
+@import "./components/about";
+@import "./components/services";
+@import "./components/route";
+@import "./components/faq";
+@import "./components/footer";
+
+
+// Media Querry
+@import "./media/mobile";//media querry for mobile
+@import "./media/laptoplarge"; //media querry for laptop
+@import "./media/laptop"; //media querry for laptop
+@import "./media/tablet"; //media querry for tablet
