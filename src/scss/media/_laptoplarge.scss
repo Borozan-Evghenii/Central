@@ -1,7 +1,4 @@
 //up to 1025px
 @include laptop-large{
-    .grid{
-        display: grid;
-        grid-template-columns: 500px  1fr;
-    }
+   
 }

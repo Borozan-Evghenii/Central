@@ -1,40 +1,4 @@
 //until 768px
 @include tablet{
-    .heading{
-        width: 100%;
-        margin-bottom: 50px;
-    }
-    .hero-heading{
-        width: 100%;
-        margin-bottom: 0;
-    }
-    .grid{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .traveled{
-        &-content{
-            grid-template-columns:  1fr;
-            &_item{
-                &:last-child{
-                    grid-column: auto;
-                }
-            }
-            
-        }
-    }
-
-    .hero-slider{
-        .swiper{
-            height: 300px;
-            img{
-                height: -webkit-fill-available;
-                width: 100%;
-                object-fit: cover;
-                
-            }
-        }
-    }
-    
+   
 }

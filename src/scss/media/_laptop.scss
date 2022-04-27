@@ -1,44 +1,5 @@
 //until 1024px
 @include laptop {
-    .heading{
-        flex-basis: 300px;
-    }
-    .hero-heading{
-        width: 500px;
-    }
-    //hero querry
-    .hero-social{
-        display: none;
-    }
-    //hero querry
-    .grid{
-        display: grid;
-        grid-template-columns: 300px 1fr;
-    }
     
-    
-    .traveled{
-        &-content{
-            grid-template-columns: repeat(2, 1fr);
-            &_item{
-                &:last-child{
-                    grid-column: 1/3;
-                }
-            }
-            
-        }
-    }
-
-    .hero-slider{
-        .swiper{
-            height: 450px;
-            img{
-                height: -webkit-fill-available;
-                width: 100%;
-                object-fit: cover;
-                
-            }
-        }
-    }
 
 }
