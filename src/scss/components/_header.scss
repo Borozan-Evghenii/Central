@@ -5,6 +5,7 @@
     left: 0;
     z-index: 99;
     padding: 20px 0;
+    color: $white;
     &-container{
         justify-content: space-between;
         align-items: center;
@@ -13,6 +14,7 @@
     &-left{
         display: flex;
         align-items: center;
+        color: $white;
         gap: 20px;
         .hamburger{
             display: flex;
@@ -20,7 +22,7 @@
             align-items: center;
             width: 50px;
             height: 50px;
-            border: 1px solid #000;
+            border: 1px solid $white;
             justify-content: center;
             align-items: center;
             .burger_line_container{
@@ -30,7 +32,7 @@
                     display: block;
                     width: 15px;
                     height: 1px;
-                    background-color: #333;
+                    background-color: $white;
                     margin-bottom: 5px;
                     &:last-child{
                         margin-bottom: 0;
@@ -40,14 +42,17 @@
             }
             &:hover{
                 cursor: pointer;
-                background-color: $accent;
-                border: 1px solid $accent;
+                background-color: $white;
+                border: 1px solid $white;
                 .burger_line{
-                    background-color: $white;
+                    background-color: $accent;
                     transition: all .3s ease-in-out;
                 }
 
             }
+        }
+        .translate-item{
+            color: inherit;
         }
     }
 
@@ -55,12 +60,17 @@
         display: flex;
         align-items: center;
         gap: 20px;
+        color: $white;
+        .header-contact{
+            color: inherit;
+        }
         
     }
     .logo-container{
         .logo{
             font-size: 24px;
             font-weight: 500;
+            color: $white;
             text-transform: uppercase;
         }
     }
@@ -99,6 +109,7 @@
     top: 0;
     right: 0;
     left: 0;
+    z-index: 98;
     .news-container{
         width: 100vw;
         height: 0vh;
