@@ -1,4 +1,25 @@
 //until 768px
 @include tablet{
-   
+    .header{
+        &-right{
+            .header-contact{
+                color: inherit;
+            }
+            .header-button{
+                &_text{
+                    display: none;
+                }
+                &_book{
+                    display: block;
+                    &_icon{
+    
+                    }
+                    &_text{
+    
+                    }
+                }
+            }
+            
+        }
+    }
 }

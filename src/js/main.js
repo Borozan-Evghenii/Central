@@ -1,6 +1,3 @@
-const burger = document.querySelector('.hamburger');
-const news = document.querySelector('.news-block');
-
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     slidesPerView: 3,
@@ -11,15 +8,20 @@ const swiper = new Swiper('.swiper', {
   
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.news-button-next',
+      prevEl: '.news-button-prev',
     },
   
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
   });
+
+
+
+
+const burger = document.querySelector('.hamburger');
+const news = document.querySelector('.news-block');
+const body = document.querySelector('.body');
+const header = document.querySelector('.header');
+
 
 
 
@@ -29,6 +31,8 @@ console.log(burger);
 burger.addEventListener('click', (e)=>{
     burger.classList.toggle('is-active');
     news.classList.toggle('is-open');
+    body.classList.toggle('modal-open');
+    header.classList.toggle('header-invert');
 });
 
 

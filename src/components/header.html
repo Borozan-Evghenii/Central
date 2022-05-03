@@ -1,94 +1,34 @@
 <header class="header">
     <div class="container header-container flex">
-        <div class="header-left">
+        <div class="header__left flex">
             <div class="hamburger">
-                <div class="burger_line_container">
-                    <span class="burger_line"></span>
-                    <span class="burger_line"></span>
-                    <span class="burger_line"></span>
-                </div> 
+                <div class="hamburger__lines">
+                    <span class="hamburger__lines__line"></span>
+                    <span class="hamburger__lines__line"></span>
+                    <span class="hamburger__lines__line"></span>
+                </div>
             </div>
-            
-            <div class="translate">
-                <a href="" class="translate-item pop">EN/</a>
-                <a href="" class="translate-item pop">RU/</a>
-                <a href="" class="translate-item pop">RO</a>
+            <!-- dropdown block to mobile -->
+            <div class="translate pop">
+                <a href="" class="translate__link">EN/</a>
+                <a href="" class="translate__link">RU/</a>
+                <a href="" class="translate__link">RO</a>
             </div>
         </div>
-        <div class="logo-container">
-            <p class="logo">Hotel Central</p>
+        <div class="header__logo">
+            <a class="logo">hotel central</a>
         </div>
-        <div class="header-right">
-            <a href="" class="pop header-contact">Contacte</a>
-            <button class="header-button button-white">Bronează</button>
+        <div class="header__right flex">
+            <a href="" class="header__contact pop">Contacte</a>
+            <button class="header-button button--white">
+                <span class="header-button__text">Bronează</span>
+                <div class="header-button__book">
+                    <div class="header-button__book__icon">
+
+                    </div>
+                    <p class="header-button__book__text">book</p>
+                </div>
+            </button>
         </div>
     </div>
 </header>
-
-<div class="news-block">
-    <div class="container news-container">
-        <p class="bread_crumbs">Noutăți / Promoții</p>
-        <div class="news-heading">
-            <h2>Fii <span class="italic">împreună</span> cu noi la <span class="italic">orice prilej</span></h2>
-            <div class="slider_control">
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-        </div>
-        <div class="news-posts">
-            <!-- Slider main container -->
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                    <div class="post">
-                        <p class="post-date pop">02.03.2022</p>
-                        <h3 class="post-heading">Petrece <span class="italic">Ziua îndrăgostiților</span> în incint hotelului</h3>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="post">
-                        <p class="post-date pop">02.03.2022</p>
-                        <h3 class="post-heading">Petrece <span class="italic">Ziua îndrăgostiților</span> în incint hotelului</h3>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="post">
-                        <p class="post-date pop">02.03.2022</p>
-                        <h3 class="post-heading">Petrece <span class="italic">Ziua îndrăgostiților</span> în incint hotelului</h3>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="post">
-                        <p class="post-date pop">02.03.2022</p>
-                        <h3 class="post-heading">Petrece <span class="italic">Ziua îndrăgostiților</span> în incint hotelului</h3>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="post">
-                        <p class="post-date pop">02.03.2022</p>
-                        <h3 class="post-heading">Petrece <span class="italic">Ziua îndrăgostiților</span> în incint hotelului</h3>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="post">
-                        <p class="post-date pop">02.03.2022</p>
-                        <h3 class="post-heading">Petrece <span class="italic">Ziua îndrăgostiților</span> în incint hotelului</h3>
-                    </div>
-                </div><div class="swiper-slide">
-                    <div class="post">
-                        <p class="post-date pop">02.03.2022</p>
-                        <h3 class="post-heading">Petrece <span class="italic">Ziua îndrăgostiților</span> în incint hotelului</h3>
-                    </div>
-                </div>
-                
-            </div>
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
-            </div>
-        </div>
-    </div>
-</div>
