@@ -1,25 +1,40 @@
 //until 768px
 @include tablet{
-    .header{
-        &-right{
-            .header-contact{
-                color: inherit;
-            }
-            .header-button{
-                &_text{
-                    display: none;
-                }
-                &_book{
-                    display: block;
-                    &_icon{
-    
-                    }
-                    &_text{
-    
-                    }
-                }
-            }
-            
-        }
+    //Heading
+    h1{
+        font-size: 36px;
+    }
+
+    h2{
+        font-size: 36px;
+    }
+    h3{
+        font-size: 24px;
+    }
+
+    h4{
+        font-size: 18px;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    .card-text{
+        font-size: 14px;
+    }
+
+
+    //Header
+    .button-text{
+        display: none;
+    }
+    .button-icon{
+        display: flex;
+    }
+    button{
+        padding: 0;
+        width: 52px;
+        height: 52px;
     }
 }

@@ -1,2 +1,2 @@
-(()=>{new Swiper(".swiper",{slidesPerView:3,spaceBetween:20,loop:!0,navigation:{nextEl:".news-button-next",prevEl:".news-button-prev"}});var e=document.querySelector(".hamburger"),t=document.querySelector(".news-block"),o=document.querySelector(".body"),n=document.querySelector(".header");console.log(e),e.addEventListener("click",(function(s){e.classList.toggle("is-active"),t.classList.toggle("is-open"),o.classList.toggle("modal-open"),n.classList.toggle("header-invert")}))})();
+(()=>{var e=document.querySelector(".news-burger");e.addEventListener("click",(function(n){e.classList.toggle("news-burger--is-open")}))})();
 //# sourceMappingURL=main.js.map

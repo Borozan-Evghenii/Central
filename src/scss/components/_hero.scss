@@ -1,0 +1,21 @@
+.hero{
+    position: relative;
+    &_video{
+        position: relative;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    &_content{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 3;
+        transform: translate(-50%, -50%);
+        
+    }
+    &_h1{
+        color: $white;
+        text-align: center;
+    }
+}

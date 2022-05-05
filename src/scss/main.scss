@@ -9,12 +9,14 @@
 //Components
 
 @import "./components/header";
+@import "./components/hero";
 
 
 
 
 // Media Querry
-@import "./media/mobile"; //media querry for mobile
+
 @import "./media/laptoplarge"; //media querry for laptop
 @import "./media/laptop"; //media querry for laptop
 @import "./media/tablet"; //media querry for tablet
+@import "./media/mobile"; //media querry for mobile

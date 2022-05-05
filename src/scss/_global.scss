@@ -3,12 +3,41 @@
 //Heading
 
 h1{
-    font-size: 3rem;
+    font-size: 48px;
     font-weight: 600;
-    text-align: center;
-    color: $white;
     text-transform: uppercase;
     line-height: 1.2;
+}
+
+h2{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+h3{
+    font-size: 36px;
+    font-style: italic;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+h4{
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.card-text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3;
 }
 
 
@@ -18,7 +47,10 @@ h1{
 
 
 
-//General
+
+
+
+//General Settings
 
 .container{
     max-width: 1240px;
@@ -36,6 +68,18 @@ body{
     font-weight: 500;
     background-color: #3333;
 }
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+//General Components
+
 .italic{
     font-style: italic;
 }
@@ -43,37 +87,19 @@ body{
 a{
     text-decoration: none;
     color: $default;
-    
-}
-button{
-    border: 1px solid $default;
-    padding: 20px 40px;
-    font-size: 14px;
-    text-transform: uppercase;
-    background: transparent;
-    font-weight: 600;
-    color: $default;
-    &:hover{
-        cursor: pointer;
-        background-color: $accent;
-        color: $white;
-        border: 1px solid $accent;
-        transition: all .3s ease-in-out;
-    }
-
-}
-.button-white{
-    border: 1px solid $white;
-    color: $white;
-    &:hover{
-        color: $default;
-        background-color: $white;
-        border: 1px solid $white;
-
-    }
 }
 
 .pop{
     font-family: 'Poppins',serif;
     font-size: 12px;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($default, .1);
+
 }
