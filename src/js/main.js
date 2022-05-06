@@ -1,4 +1,5 @@
 const burger = document.querySelector('.news-burger');
+const body = document.querySelector('.body');
 const logo = document.querySelector('.header-logo');
 const button = document.querySelector('.button');
 const news = document.querySelector('.news');
@@ -12,6 +13,7 @@ burger.addEventListener('click', (e) => {
     logo.classList.toggle('invert');
     button.classList.toggle('invert');
     burger.classList.toggle('invert');
+    body.classList.toggle('scroll-none');
     
 
     

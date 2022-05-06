@@ -1,0 +1,16 @@
+.about{
+    &-container{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    &-content{
+        max-width: 500px;
+        &_text{
+            margin-top: 40px;
+        }
+    }
+    &-description{
+        margin-top: 15px;
+    }
+}

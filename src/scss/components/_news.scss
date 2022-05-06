@@ -1,11 +1,11 @@
 .news{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 9999;
     visibility: hidden;
-    width: 100%;
-    height: calc(100% - 100px);
+    width: 100vw;
+    height: calc(100vh - 100px);
     background-color: $bg;
     padding-top: 100px;
     &_heading-control{
@@ -15,7 +15,7 @@
 
 }
 .slider-control{
-   
+    
     .slider-arrow{
         justify-self: flex-end;
         padding: 10px 15px;
@@ -70,4 +70,5 @@
     height: calc(100% - 100px);
     background-color: #f5f3f1;
     padding-top: 100px;
+
 }
