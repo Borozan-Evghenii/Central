@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="theme-color" content="#4285f4">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,6 +17,7 @@
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Poppins&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css">
     <title>Hotel Central</title>
 </head>
 
@@ -41,7 +41,7 @@
         <a class="header-logo">hotel central</a>
 
         <div class="header_contact-button flex">
-            <button>
+            <button class="button">
                 <span class="button-text">bronează</span>
                 <div class="button-icon">
                     <span class="material-symbols-outlined">calendar_today</span>
@@ -56,17 +56,78 @@
         <!-- Hero -->
         <section class="hero">
     <div class="overlay"></div>
-    <video class="hero_video" src="./img/Cinematic.webm" autoplay muted loop></video>
-    <div class="hero_content">
+    <div class="hero_content flex" data-vide-bg="./img/Cinematic.webm">
         <h1 class="hero_h1">Locul ideal pentru iubitorii de călătorii locale</h1>
     </div>
 </section>
         <!-- End Hero -->
+        <!-- news -->
+        <section class="news">
+    <div class="container news-container">
+        <div class="news-content">
+
+            <div class="news-heading">
+                <p class="news_description">Noutăți / Promoții</p>
+                <div class="news_heading-control flex">
+                    <h3 class="news_heading">Fii <span class="italic">împreună</span> cu noi <span class="italic">la
+                            orice prilej</span> </h3>
+                    <div class="slider-control ">
+                        <i class="material-symbols-outlined slider-arrow slider-arrow--left">arrow_back</i>
+                        <i class="material-symbols-outlined slider-arrow slider-arrow--right">arrow_forward</i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Slider main container -->
+        <div class="news-slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+
+                    <div class="news-post flex">
+                        <span class="news-post_date pop">02.02.2022</span>
+                        <p class="news-post_heading">Petrece <span class="italic">Ziua îndrăgostiților</span> în incint
+                            hotelului</p>
+                    </div>
+                    
+                </div>
+
+                <div class="swiper-slide">
+
+                    <div class="news-post flex">
+                        <span class="news-post_date pop">02.02.2022</span>
+                        <p class="news-post_heading">Petrece <span class="italic">Ziua îndrăgostiților</span> în incint
+                            hotelului</p>
+                    </div>
+                    
+                </div>
+
+                <div class="swiper-slide">
+
+                    <div class="news-post flex">
+                        <span class="news-post_date pop">02.02.2022</span>
+                        <p class="news-post_heading">Petrece <span class="italic">Ziua îndrăgostiților</span> în incint
+                            hotelului</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+        <!-- End news -->
 
     </div>
 
 
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vide/0.5.1/jquery.vide.js"></script>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="js/main.js"></script>
 
