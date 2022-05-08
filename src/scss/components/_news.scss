@@ -2,12 +2,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 9999;
     visibility: hidden;
-    width: 100vw;
-    height: calc(100vh - 100px);
-    background-color: $bg;
-    padding-top: 100px;
     &_heading-control{
         justify-content: space-between;
     }
@@ -35,13 +30,14 @@
 }
 .news-slider{
     overflow: hidden;
+    width: 100%;
 }
 .news-post{
     margin-top: 40px;
     flex-direction: column;
     justify-content: space-between;
     padding: 30px;
-    min-height: 320px;
+    min-height: 40vh;
     border: 1px solid $default;
     &:hover{
         background-color: #c4c4c4;
@@ -61,14 +57,17 @@
 
 
 .news--is-open{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 9999;
+    display: flex;
+    align-items: center;
     visibility: visible;
     width: 100%;
-    height: calc(100% - 100px);
+    height: calc(100vh - 120px);
     background-color: #f5f3f1;
     padding-top: 100px;
+    padding-bottom: 20px;
 
 }

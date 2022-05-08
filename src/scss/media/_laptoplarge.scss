@@ -1,0 +1,7 @@
+//until 1025px
+@include laptop-large{
+    .news-slider{
+        overflow: hidden;
+        width: calc(100vw - 40px);
+    }
+}

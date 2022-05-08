@@ -1,9 +1,9 @@
-const burger = document.querySelector('.news-burger');
-const body = document.querySelector('.body');
-const logo = document.querySelector('.header-logo');
-const button = document.querySelector('.button');
-const news = document.querySelector('.news');
-const header = document.querySelector('.header');
+const burger  = document.querySelector('.news-burger');
+const body    = document.querySelector('.body');
+const logo    = document.querySelector('.header-logo');
+const button  = document.querySelector('.button');
+const news    = document.querySelector('.news');
+const header  = document.querySelector('.header');
 
 burger.addEventListener('click', (e) => {
 
@@ -26,7 +26,7 @@ burger.addEventListener('click', (e) => {
 const swiper = new Swiper('.news-slider', {
     // Optional parameters
     loop: true,
-    slidesPerView:3,
+    slidesPerView: 1,
     spaceBetween: 20,
   
   
@@ -35,15 +35,27 @@ const swiper = new Swiper('.news-slider', {
       nextEl: '.slider-arrow--right',
       prevEl: '.slider-arrow--left',
     },
+
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 1,
+
+      },
+      // when window width is >= 640px
+      640: {
+        slidesPerView: 2,
+
+      },
+      // when window width is >= 640px
+      1100: {
+        slidesPerView: 3,
+
+      }
+    }
   
-});
-
-
-
-//Gsap Animation 
-gsap.from("news--is-open", {
-      opacity: 0, 
-      visibility:0,
-      height: 0,
-      duration: 1
 });

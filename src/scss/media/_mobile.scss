@@ -1,0 +1,79 @@
+//until 452px
+@include mobile {
+    //Heading
+    h1{
+        font-size: 28px;
+    }
+
+    h2{
+        font-size: 28px;
+    }
+    h3{
+        font-size: 18px;
+    }
+
+    h4{
+        font-size: 18px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    .card-text{
+        font-size: 14px;
+    }
+
+    //header
+    .header-logo{
+        font-size: 15px;
+    }
+
+    //news
+
+    .news_heading-control{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .news_heading{
+        font-size: 24px;
+        
+    }
+
+    .news-heading{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+
+    .slider-control{
+        .slider-arrow{
+            font-size: 16px;
+            &:hover{
+                cursor: pointer;
+                background-color: $default;
+                color: $white;
+            }
+        
+        }
+    }
+
+    .news--is-open{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        visibility: visible;
+        overflow-y: scroll;
+        height: calc(100vh - 10px);
+        background-color: #f5f3f1;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    
+    }
+
+}

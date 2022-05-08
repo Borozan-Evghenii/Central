@@ -65,7 +65,7 @@ p{
     margin-top: 40px;
 }
 .section{
-    margin: 200px 0 ;
+    padding: 200px 0 200px 0 ;
 }
 
 .scroll-none{
@@ -110,7 +110,7 @@ a{
     left: 0;
     z-index: 1;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: rgba($default, .1);
 
 }
