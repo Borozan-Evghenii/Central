@@ -1,9 +1,9 @@
 //Global
-@import "mixins";
 @import "variables";
-@import "global";
+@import "mixins";
 @import "../../node_modules/normalize.css/normalize.css";
 @import "../../node_modules/reset.css/reset.css";
+@import "global";
 @import "../../node_modules/swiper/swiper-bundle.css";
 
 //Components
@@ -12,6 +12,7 @@
 @import "./components/hero";
 @import "./components/news";
 @import "./components/about";
+@import "./components/rooms";
 
 
 

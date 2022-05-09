@@ -1,0 +1,57 @@
+.rooms-heading{
+    max-width: 460px;
+
+}
+
+.rooms_control-descr{
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap-reverse;
+    gap: 20px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    .rooms_descr_text{
+        max-width: 500px;
+    }
+}
+
+.rooms-slider{
+    overflow: hidden;
+}
+
+.rooms-post{
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 30px;
+    min-height: 60vh;
+    border: 1px solid $default;
+    gap: 20px;
+    transition: background-image 2s ease;
+    .overlay{
+        display: none;
+    }
+    &:hover{
+        cursor: pointer;
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        transition: background-image 2s ease;
+        .overlay{
+            display: none;
+        }
+
+        .rooms-post_heading{
+            filter: invert(100%);
+        }
+        .rooms-post_descr{
+            filter: invert(100%);
+        }
+    }
+    .rooms_heading-control{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
