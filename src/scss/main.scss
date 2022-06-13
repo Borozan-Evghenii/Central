@@ -1,23 +1,12 @@
 //Global
-@import "variables";
-@import "mixins";
 @import "../../node_modules/normalize.css/normalize.css";
 @import "../../node_modules/reset.css/reset.css";
-@import "global";
 @import "../../node_modules/swiper/swiper-bundle.css";
+@import "variables";
+@import "mixins";
+@import "global";
 
 //Components
 
 @import "./components/header";
 @import "./components/hero";
-
-
-
-
-
-// Media Querry
-
-@import "./media/laptoplarge"; //media querry for laptop
-@import "./media/laptop"; //media querry for laptop
-@import "./media/tablet"; //media querry for tablet
-@import "./media/mobile"; //media querry for mobile

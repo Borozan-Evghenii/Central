@@ -3,11 +3,21 @@
 }
 
 .header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     padding: 30px 0;
+    z-index: 99;
+
 }
+
 .nav-item{
     margin: 0 20px;
+    color: $white;
+    font-size: clamp(12px , 0.878vw, 14px);
 }
+
 .navigation{
     align-items: center;
 }
@@ -15,14 +25,17 @@
 button{
     padding: 18px 35px;
     color: $white;
-    border: 1px solid #9C9A81;
-    background-color: #9C9A81;
+    font-size: clamp(12px , 0.878vw, 14px);
+    border: 1px solid $accent;
+    background-color: $accent;
     transition: all .6s;
     &:hover{
         cursor: pointer;
-        background-color:darken(#9C9A81, 20%);
+        background-color:darken($accent, 20%);
+        border: 1px solid darken($accent, 20%);
     }
 }
+
 .book-button{
     margin-left: 20px ;
 }
@@ -37,11 +50,18 @@ button{
     &_line{
         width: 100%;
         height: 1px;
-        background-color: $default;
+        background-color: $white;
         margin-bottom: 8px;
         &:last-child{
             margin-bottom: 0;
         }
         
+    }
+}
+
+
+@include tablet {
+    .nav-items{
+        display: none;
     }
 }

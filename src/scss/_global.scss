@@ -1,15 +1,29 @@
-// Add the global setting for Heading an Global Components
-html{
-    font-size: 10px;
-}
 //Heading
 
 
+h1{
+    font-size: $heading1;
+}
 
+h2{
+    font-size: $heading2;
+}
 
+h3{
+    font-size: $heading3;
+}
 
+h4{
+    font-size: $heading4;
+}
 
+h5{
+    font-size: $heading5;
+}
 
+h6{
+    font-size: $heading6;
+}
 
 
 
@@ -19,16 +33,15 @@ html{
 //General Settings
 
 .container{
+    max-width: $containerWidth;
     margin: 0 auto;
-    padding: 0 4vw;
+    padding: 0 $containerPadding;
 }
 
-.flex{
-    display: flex;
-}
+
 
 .section{
-    padding: 200px 0 0 0 ;
+    padding: $sectionPadding;
 }
 
 .scroll-none{
@@ -37,10 +50,10 @@ html{
 
 body{
     position: relative;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 18px;
-    font-weight: 500;
-    background-color: #F6F5EA;
+    font-family: $font;
+    font-size: $regular;
+    font-weight: normal;
+    background-color: $backgrounColor;
 }
 
 .material-symbols-outlined {
@@ -54,7 +67,7 @@ body{
 
 //General Components
 
-.italic{
+.italic{    
     font-style: italic;
 }
 
@@ -65,7 +78,6 @@ a{
 
 .pop{
     font-family: 'Poppins',serif;
-    font-size: 12px;
 }
 .overlay{
     position: absolute;
@@ -74,6 +86,10 @@ a{
     z-index: 1;
     width: 100%;
     height: 100vh;
-    background-color: rgba($default, .1);
+    background-color: rgba($overlay, .8);
 
+}
+
+.flex{
+    display: flex;
 }
