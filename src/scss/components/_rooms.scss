@@ -14,6 +14,7 @@
     width: 100%;
     grid-template-columns: 1fr 1fr auto;
     grid-template-rows: 1fr 1fr;
+    column-gap: 20px;
     row-gap: 100px;
     grid-auto-flow: column;
     justify-items: center;
@@ -38,8 +39,8 @@
         height: 430px;
     }
     &:nth-child(3n){
-        grid-row: 2 / 2 span;
-        grid-column: 1 / 2 span;
+        grid-row: auto;
+        grid-column: auto;
         max-width: 790px;
     }
 }

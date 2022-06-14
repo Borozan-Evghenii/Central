@@ -1,6 +1,6 @@
 .swiper{
     position: relative;
-    height: 95vh;
+    height: 600px;
 }
 
 .swiper-slide{
@@ -19,10 +19,12 @@
     img{
         object-fit: cover;
         width: 100%;
-        height: 100%;
+        height: 600px;
         
     }
 }
+
+
 
 .slider-button{
     z-index: 20;

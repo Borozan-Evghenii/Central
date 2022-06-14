@@ -1,0 +1,67 @@
+@include mobile{
+    $sectionPadding: 50px 0 50px 0 ;
+
+    .section{
+        padding: $sectionPadding;
+    }
+    
+
+    //featureSlider
+    .swiper{
+        height: 400px;
+    }
+    .swiper-slide{
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 400px;
+        }
+    }
+    .slider-button{
+        padding: 5px;
+    }
+    .slider-control{
+        bottom: 20px;
+        right: 20px;
+    }
+
+    //rooms
+    .rooms-items{
+        display: grid;
+        width: 100%;
+        grid-template-columns: auto ;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 100px;
+        justify-items: center;
+        margin-top: 100px;
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 230px;
+        }
+        
+    }
+
+    //wellnes
+
+    .wellnes-items{
+        margin-top: 100px;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: auto;
+    }
+
+    .wellnes-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 600px;
+        img{
+            width: 100%;
+            height: 230px;
+            position: relative;
+            object-fit: cover;
+        }
+    }
+    
+}
