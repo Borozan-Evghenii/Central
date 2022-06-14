@@ -35,57 +35,19 @@ roomPost.forEach( (e) => {
   });
 });
 
-// News Slider
 
-const newsSlider = new Swiper('.news-slider', {
-    // Optional parameters
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 20,
-  
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.slider-arrow--right',
-      prevEl: '.slider-arrow--left',
-    },
 
-    breakpoints: {
-      // when window width is >= 320px
-      320: {
-        slidesPerView: 1,
-      },
-      // when window width is >= 480px
-      480: {
-        slidesPerView: 1,
 
-      },
-      // when window width is >= 640px
-      640: {
-        slidesPerView: 2,
-
-      },
-      // when window width is >= 640px
-      1100: {
-        slidesPerView: 3,
-
-      }
-    }
-  
-});
-
-// Rooms Slider
-
-const roomSlider = new Swiper('.rooms-slider', {
+const swiper = new Swiper('.swiper', {
   // Optional parameters
-  slidesPerView: 1,
-  spaceBetween: 20,
+
+  loop: true,
 
 
   // Navigation arrows
   navigation: {
-    nextEl: '.room-slider-arrow--right',
-    prevEl: '.room-slider-arrow--left',
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 
   breakpoints: {
@@ -105,7 +67,7 @@ const roomSlider = new Swiper('.rooms-slider', {
     },
     // when window width is >= 640px
     1100: {
-      slidesPerView: 2,
+      slidesPerView: 3,
 
     }
   }
