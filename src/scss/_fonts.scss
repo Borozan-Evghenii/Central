@@ -1,3 +1,11 @@
-@include font-face('Lovelace','./fonts/Lovelance-Regular.woff', normal){
+@font-face {
+    font-family: "Lovelace";
+    src: url("../fonts/Lovelace-Regular.woff2") format("woff2"),
+           url("../fonts/Lovelace-Regular.woff") format("woff");
+}
 
+@font-face {
+    font-family: "Lovelace-Italic";
+    src: url("../fonts/Lovelace-Italic.woff2") format("woff2"),
+           url("../fonts/Lovelace-Italic.woff") format("woff");
 }

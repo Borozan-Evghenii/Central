@@ -21,14 +21,8 @@ $backgrounColor:#fff;
 
 //Fonts
 
-
-@font-face {
-    font-family: "Lovelace";
-    src: url("./fonts/Lovelace-Regular.woff2") format("woff2"),
-           url("./fonts/Lovelace-Regular.woff") format("woff");
-}
-
 $font:'Lovelace', serif ;
+$fontItalic:'Lovelace-Italic', serif ;
 
 
 //FontSize
