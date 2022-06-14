@@ -1,0 +1,55 @@
+.rooms-container{
+    color: $white;
+}
+
+
+.descr-specification{
+    display: block;
+    font-size: 12px;
+    
+}
+
+.rooms-items{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr auto;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 100px;
+    grid-auto-flow: column;
+    justify-items: center;
+    margin-top: 100px;
+    
+}
+
+.rooms{
+    .section-descr{
+        color: $white;
+    }
+}
+
+.room-item{
+    max-width: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 430px;
+    }
+    &:nth-child(3n){
+        grid-row: 2 / 2 span;
+        grid-column: 1 / 2 span;
+        max-width: 790px;
+    }
+}
+
+.room-descr{
+    margin-top: 10px;
+}
+
+.rooms{
+    .feature-item{
+        border-bottom: 1px solid rgba($white, .2);
+    }
+}

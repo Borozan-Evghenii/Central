@@ -7,10 +7,14 @@ h1{
 
 h2{
     font-size: $heading2;
+    max-width: 600px;
+    font-family: 'Lovelace';
 }
 
 h3{
     font-size: $heading3;
+    margin-top: 20px;
+    color: $accent;
 }
 
 h4{
@@ -50,7 +54,7 @@ body{
     position: relative;
     font-family: $font;
     font-size: $regular;
-    line-height: 1.3;
+    line-height: 1.2;
     font-weight: normal;
     background-color: $backgrounColor;
 }
@@ -67,12 +71,18 @@ body{
 //General Components
 
 .italic{    
-    font-style: italic;
+    font-family: "Lovelace-italic";
 }
 
 a{
     text-decoration: none;
     color: $default;
+}
+
+.section-container{
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
 }
 
 .pop{
@@ -97,4 +107,11 @@ a{
     font-size: $sectionDescr;
     color: $accent;
     font-family: 'Poppins', sans-serif;
+}
+
+.section-descr{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: $regular;
+    margin-top: 20px;
+    max-width: 490px;
 }
