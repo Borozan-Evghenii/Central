@@ -1,13 +1,9 @@
+
 //Container & Breackpoints
 
 $containerWidth: 1200px;
-$containerPadding: clamp(20px, 5.857vw, 80px);
-$breackpoint1450: 1499.98px;
-$breackpoint990: 991.98px;
-$breackpoint767: 767.98px;
-$breackpoint479: 479.98px;
-
-$sectionPadding:150px 0 50px 0;
+$containerPadding: 0 20px;
+$sliderHeight:clamp(420px ,95vh , 650px);
 
 
 //Color
@@ -23,17 +19,3 @@ $backgrounColor:#EDEDED;
 
 $font:'Lovelace', serif ;
 $fontItalic:'Lovelace-Italic', serif ;
-
-
-//FontSize
-
-$heading1:clamp(48px, 7.028vw ,96px);
-$heading2:clamp(36px, 4.685vw ,64px);
-$heading3:clamp(32px, 2.343vw ,32px);
-$heading4: clamp(16px ,3.050vw,28px);
-$heading5:clamp(20px, 1.464vw ,20px);
-$heading6:clamp(16px, 1.318vw ,18px);
-$regular:clamp(14px, 1.318vw ,18px);
-$footerRegular:clamp(14px, 1.025vw , 14px);
-$sectionDescr:clamp(10px, 0.732vw , 10px);
-

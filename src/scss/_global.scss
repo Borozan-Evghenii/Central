@@ -2,38 +2,6 @@
 //Heading
 
 
-h1{
-    font-size: $heading1;
-}
-
-h2{
-    font-size: $heading2;
-    max-width: 600px;
-    font-family: 'Lovelace';
-}
-
-h3{
-    font-size: $heading3;
-    margin-top: 20px;
-    color: $accent;
-}
-
-h4{
-    font-size: $heading4;
-}
-
-h5{
-    font-size: $heading5;
-}
-
-h6{
-    font-size: $heading6;
-}
-
-
-
-
-
 
 //General Settings
 
@@ -43,13 +11,11 @@ h6{
     padding: 0 $containerPadding;
 }
 
-.section{
-    padding: $sectionPadding;
-}
+.section{padding: $sectionPadding;}
 
-.scroll-none{
-    overflow: hidden;
-}
+.scroll-none{overflow: hidden;}
+
+img{display: block;}
 
 body{
     position: relative;
@@ -72,9 +38,7 @@ body{
 
 //General Components
 
-.italic{    
-    font-family: "Lovelace-italic";
-}
+.italic{font-family: "Lovelace-italic";}
 
 a{
     text-decoration: none;
@@ -87,9 +51,8 @@ a{
     flex-direction: column;
 }
 
-.pop{
-    font-family: 'Poppins',serif;
-}
+.pop{font-family: 'Poppins',serif;}
+
 .overlay{
     position: absolute;
     top: 0;
@@ -101,9 +64,7 @@ a{
 
 }
 
-.flex{
-    display: flex;
-}
+.flex{display: flex;}
 
 .descriptor{
     font-size: $sectionDescr;
