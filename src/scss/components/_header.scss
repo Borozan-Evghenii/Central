@@ -1,15 +1,145 @@
 .header{
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  bottom: auto;
-  background-color: transparent;
+  z-index: 100;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow: hidden;
 
 }
 
 .header__container{
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-wrap{
+  img{
+    max-height: 80px;
+  }
+}
+
+.nav{
+  display: flex;
+  justify-content: flex-end;
+  color: $accent;
+  width: 100%;
+  align-items: center;
+  font-size: 0.75rem;
+  text-transform: capitalize;
+
+  ul{
+    align-items: center;
+    gap: 2.5em;
+    li{
+      a{
+        color: $white;
+        letter-spacing: .5px;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+.nav-wrap{
+  align-items: center;
+  justify-content: end;
+  gap: 2.5em;
+  height: 100%;
+}
+
+.burger{
+  z-index: 1;
+  display: flex;
   flex-direction: column;
+  gap: 8px;
+  padding: 10px;
+  transition: all .5s ease-in-out;
+  &:hover{
+    cursor: pointer;
+    gap: 0;
+  }
+  &__item{
+    display: block;
+    width: 30px;
+    height: 1px;
+    background-color: $accent;
+    transition: all .5s ease-in-out;
+  }
+}
+
+.nav-items{
+  transform: translate(100px);
+  opacity: 0;
+  transition: all .5s ease-in-out; 
+  overflow: hidden;
+  width: 0%;
+}
+
+
+.button-cta{
+  display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+  background-color: $accent;
+  color: $white;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: none; 
+  &:hover{
+    cursor: pointer;
+    background-color: lighten($accent, .5);
+  } 
+}
+
+
+.nav{
+  &:hover{
+    .nav-items{
+      gap: 2.5em;
+      transform: translate(0);
+      opacity: 1;
+      overflow: hidden;
+      width: 100%;
+      transition: all .5s ease-in-out;
+    }
+    .burger{
+      transition: all .5s ease-in-out;
+      transform: rotate(90deg);
+      gap: 0;
+    }
+  }
+}
+
+
+@include tablet{
+  .desktop-nav{
+    display: none;
+  }
+
+  .mobile-nav{
+    display: flex;
+    .nav-items__mobile{
+      display: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      flex-direction: column;
+      width: 100vw;
+      height: 100vh;
+      background-color: $default;
+    }
+  }
+}
+
+@media (min-width:768.98px) {
+  .mobile-nav{
+    display: none;
+  }
 }

@@ -1,8 +1,3 @@
-
-//Heading
-
-
-
 //General Settings
 
 .container{
@@ -10,18 +5,14 @@
     margin: 0 auto;
     padding: 0 $containerPadding;
 }
-
-.section{padding: $sectionPadding;}
-
-.scroll-none{overflow: hidden;}
-
-img{display: block;}
-
+main{
+    overflow: hidden;
+}
 body{
     position: relative;
     font-family: $font;
-    font-size: $regular;
-    line-height: 1.2;
+    font-size: 62.5%;//10px
+    line-height: 1.5;
     font-weight: normal;
     color: $default;
     background-color: $backgrounColor;
@@ -38,23 +29,20 @@ body{
 
 //General Components
 
-.italic{font-family: "Lovelace-italic";}
+.italic{font-style: italic;}
+.mont{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
 
 a{
     text-decoration: none;
     color: $default;
 }
 
-.section-container{
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-}
-
-.pop{font-family: 'Poppins',serif;}
-
-.overlay{
+.overlay::after{
     position: absolute;
+    content: '';
     top: 0;
     left: 0;
     z-index: 1;
@@ -66,16 +54,10 @@ a{
 
 .flex{display: flex;}
 
-.descriptor{
-    font-size: $sectionDescr;
+.section-descriptor{
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    text-transform: uppercase;
     color: $accent;
-    font-family: 'Poppins', sans-serif;
+    text-align: center;
 }
-
-.section-descr{
-    font-family: 'Cormorant Garamond', serif;
-    font-size: $regular;
-    margin-top: 20px;
-    max-width: 490px;
-}
-

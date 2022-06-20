@@ -1,21 +1,38 @@
 <header class="header">
     <div class="container header__container flex">
-        <div class="logo-wrapper">
-            <img src="./img/logo.svg" alt="companyLogo">
+        <div class="logo-wrap">
+            <img class="logo" src="./img/logo.svg" alt="logo-company">
         </div>
-        <nav class="navigation">
-            <button class="burger header__burger">
-                <span class="burger_item" ></span>
-                <span class="burger_item" ></span>
-                <span class="burger_item" ></span>
-            </button>
-            <div class="nac-items-wrapper">
-                <ul>
-                    <li><a class="pop" href="">Cazare</a></li>
-                    <li><a class="pop" href="">Bunăstare</a></li>
+        <div class="nav-wrap flex">
+            <nav class="nav desktop-nav">
+                <ul class="nav-items flex">
+                    <li><a class="mont" href="">cazare</a></li>
+                    <li><a class="mont" href="">bunăstare</a></li>
+                    <li><a class="mont" href="">experineță</a></li>
+                    <li><a class="mont" href="">restaurant</a></li>
+                    <li><a class="mont" href="">conferență</a></li>
                 </ul>
-                <button class="header__button" >Bronează</button>
-            </div>
-        </nav>
+                <div class="burger">
+                    <span class="burger__item"></span>
+                    <span class="burger__item"></span>
+                    <span class="burger__item"></span>
+                </div>
+            </nav>
+            <nav class="mobile-nav">
+                <ul class="nav-items__mobile flex">
+                    <li><a class="mont" href="">cazare</a></li>
+                    <li><a class="mont" href="">bunăstare</a></li>
+                    <li><a class="mont" href="">experineță</a></li>
+                    <li><a class="mont" href="">restaurant</a></li>
+                    <li><a class="mont" href="">conferență</a></li>
+                </ul>
+                <div class="burger burger__mobile">
+                    <span class="burger__item"></span>
+                    <span class="burger__item"></span>
+                    <span class="burger__item"></span>
+                </div>
+            </nav>
+            <button class="button-cta mont">rezervează</button>
+        </div>
     </div>
 </header>

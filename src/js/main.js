@@ -1,24 +1,5 @@
-// const burger  = document.querySelector('.news-burger');
-// const body    = document.querySelector('.body');
-// const logo    = document.querySelector('.header-logo');
-// const button  = document.querySelector('.button');
-// const news    = document.querySelector('.news');
-// const header  = document.querySelector('.header');
-
-// burger.addEventListener('click', (e) => {
-
-//     //add animation to burger closes/open
-//     burger.classList.toggle('news-burger--is-open');
-//     news.classList.toggle('news--is-open');
-//     logo.classList.toggle('invert');
-//     button.classList.toggle('invert');
-//     burger.classList.toggle('invert');
-//     body.classList.toggle('scroll-none');
-    
-
-    
-// });
-
+const burger  = document.querySelector('.burger');
+const nav = document.querySelector('.nav-items');
 
 
 const swiper = new Swiper('.swiper', {
