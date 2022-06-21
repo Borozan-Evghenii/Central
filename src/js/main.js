@@ -10,12 +10,15 @@ const swiper = new Swiper('.swiper', {
     delay: 2000,
   },
 
-
+  pagination: {
+    el: '.pagination',
+    type: 'bullets',
+  },
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button--next',
-    prevEl: '.swiper-button--prev',
+    nextEl: '.button-next',
+    prevEl: '.button-prev',
   },
 
 });
