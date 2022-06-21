@@ -7,23 +7,26 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  column-gap: 7vw;
+  column-gap: 5vw;
+  row-gap: 100px;
 }
 @include laptop{
-  .post-list{
-    column-gap: 1.333vw;
-    row-gap: 7vw;
-  }
+
 }
 
 .post__image{
-  max-width: 42.333vw  ;
-  max-height:42.333vw;
+  max-height: 430px;
+}
+
+@include laptop {
+  .post__image{
+    max-height: 360px;
+  }
 }
 
 @include tablet {
   .post__image{
-    width: 100%;
+    max-height: 100%;
   }
 }
 

@@ -180,8 +180,10 @@ const scripts = () =>{
 const watchFile = () =>{
     browserSync.init({
         server: {
-            baseDir: "./app"
-        }
+            baseDir: "./app",
+        },
+        
+        
     });
     watch('./src/scss/**/*.scss', styles);
     watch('./src/index.html', Include);
