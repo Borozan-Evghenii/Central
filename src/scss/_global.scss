@@ -1,5 +1,10 @@
 //General Settings
+html{
+    scroll-behavior: smooth;
+}
+
 img{
+    object-fit: cover;
     width: 100%;
     height: 100%;
     background-position: center center;
@@ -12,6 +17,14 @@ img{
 main{
     overflow: hidden;
 }
+
+.header__white{
+    background-color: $white;
+    a{
+        filter: invert(100%);        
+    }
+}
+
 body{
     position: relative;
     font-family: $font;
@@ -115,7 +128,7 @@ a{
 
 @include mobile {
     .slider{
-        height: 95vw;
+        height: 130vw;
     }
 }
 
@@ -285,5 +298,29 @@ a{
 }
 
 
+.link{
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -5px;
+        height: 2px;
+        width: 0;
+        background-color: rgba( $white , .5 );
+        transition: width 0.25s;
+    }
+    &:hover{
+        &::before{
+            width: 100%;
+            transition: width 0.25s;
+        }
+    }
+}
 
 
+.scroll-none{
+    overflow: hidden;
+    height: 100vh;
+}

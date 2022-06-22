@@ -105,6 +105,7 @@
       opacity: 1;
       overflow: hidden;
       width: 100%;
+      padding: 5px;
       transition: all .5s ease-in-out;
     }
     .burger{
@@ -123,17 +124,31 @@
 
   .mobile-nav{
     display: flex;
-    .nav-items__mobile{
-      display: none;
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      flex-direction: column;
-      width: 100vw;
-      height: 100vh;
-      background-color: $default;
+  }
+
+  .nav-items__mobile{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 0vh;
+    gap: 40px;
+    background-color: $default;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    transition: height .8s;
+    li{
+      a{
+        color: $white;
+        font-size: 22px;
+        text-transform: capitalize;
+      }
     }
   }
 }
@@ -142,4 +157,11 @@
   .mobile-nav{
     display: none;
   }
+  .nav-items__mobile{
+    display: none;
+  }
+}
+
+.mobile-menu__active{
+  height: 100vh;
 }

@@ -1,5 +1,20 @@
-const burger  = document.querySelector('.burger');
-const nav = document.querySelector('.nav-items');
+const burger  = document.querySelector('.burger__mobile');
+const menu = document.querySelector('.nav-items__mobile');
+const body = document.querySelector('.body');
+const header = document.querySelector('.header');
+
+
+burger.addEventListener('click', (e)=>{
+  menu.classList.toggle("mobile-menu__active"),
+  body.classList.toggle("scroll-none")
+});
+
+if (window.scrollY >= window.innerHeight ) {
+  header.classList.toggle("header__white")
+} else {
+  
+}
+
 
 
 const swiper = new Swiper('.swiper', {
@@ -23,13 +38,13 @@ const swiper = new Swiper('.swiper', {
 
 });
 
-const experienceSlider = new Swiper('.experience-slider', {
+const experienceSlider = new Swiper('.experience', {
   // Optional parameters
   slidesPerView: 3,
   spaceBetween: 20,
   loop: true,
   autoplay: {
-    delay: 1000,
+    delay: 2000,
   },
 
   // Responsive breakpoints
@@ -41,38 +56,18 @@ const experienceSlider = new Swiper('.experience-slider', {
     },
     // when window width is >= 480px
     480: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 20
     },
     // when window width is >= 640px
-    640: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    1000:{
       slidesPerView: 3,
       spaceBetween: 20
-    }
+    },
   }
-
-});
-
-
-const restaurantSlider= new Swiper('.swiper-restaurant', {
-  // Optional parameters
-  slidesPerView: 1,
-  loop: true,
-  autoplay: {
-    delay: 2000,
-  },
-
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-  },
-
-
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button--next',
-    prevEl: '.swiper-button--prev',
-  },
 
 });

@@ -17,6 +17,13 @@
 </head>
 
 <body class="body">
+    <ul class="nav-items__mobile flex">
+        <li><a href="">cazare</a></li>
+        <li><a href="">bunăstare</a></li>
+        <li><a href="">experineță</a></li>
+        <li><a href="">restaurant</a></li>
+        <li><a href="">conferență</a></li>
+    </ul>
     <main class="wrapper">
 
         <!-- Header -->
@@ -28,11 +35,11 @@
         <div class="nav-wrap flex">
             <nav class="nav desktop-nav">
                 <ul class="nav-items flex">
-                    <li><a class="mont" href="">cazare</a></li>
-                    <li><a class="mont" href="">bunăstare</a></li>
-                    <li><a class="mont" href="">experineță</a></li>
-                    <li><a class="mont" href="">restaurant</a></li>
-                    <li><a class="mont" href="">conferență</a></li>
+                    <li><a class="mont link" href="#rooms">cazare</a></li>
+                    <li><a class="mont link" href="#wellnes">bunăstare</a></li>
+                    <li><a class="mont link" href="#experience">experineță</a></li>
+                    <li><a class="mont link" href="#restaurant">restaurant</a></li>
+                    <li><a class="mont link" href="#conference">conferență</a></li>
                 </ul>
                 <div class="burger">
                     <span class="burger__item"></span>
@@ -41,13 +48,6 @@
                 </div>
             </nav>
             <nav class="mobile-nav">
-                <ul class="nav-items__mobile flex">
-                    <li><a class="mont" href="">cazare</a></li>
-                    <li><a class="mont" href="">bunăstare</a></li>
-                    <li><a class="mont" href="">experineță</a></li>
-                    <li><a class="mont" href="">restaurant</a></li>
-                    <li><a class="mont" href="">conferență</a></li>
-                </ul>
                 <div class="burger burger__mobile">
                     <span class="burger__item"></span>
                     <span class="burger__item"></span>
@@ -57,6 +57,7 @@
         </div>
     </div>
 </header>
+
         <!-- End Header -->
         <!-- Header -->
         <section class="hero hero-section overlay" style="background-image:url('./img/Hero-bg.jpg') ;">
@@ -70,7 +71,7 @@
 </section>
         <!-- End Header -->
         <!-- about -->
-        <section class="section about-section">
+        <section  id="about" class="section about-section">
   <div class="container about__container flex">
     <p class="section-descriptor">despre hotel</p>
     <p class="h3 about__descripton">
@@ -180,7 +181,7 @@
 </section>
         <!-- End about -->
         <!-- rooms -->
-        <section class="section rooms-section">
+        <section id="rooms"   class="section rooms-section">
   <div class="container rooms__container flex">
     <div class="section-info flex">
       <p class="section-descriptor">hotel central - camere</p>
@@ -271,7 +272,7 @@
 </section>
         <!-- End rooms -->
         <!-- wellnes -->
-        <section class="section welnes">
+        <section id="wellnes" class="section welnes">
     <div class="container wellnes__container">
         <div class="section-info flex">
             <p class="section-descriptor">Hotel central  -  Sauna</p>
@@ -307,11 +308,241 @@
 </section>
         <!-- End wellnes -->
         <!-- experience -->
-        
+        <section id="experience" class="section experience">
+  <div class="container experience__container">
+    <div class="section-info flex">
+      <p class="section-descriptor">Hotel central  -  Experiență</p>
+      <p class="h2">Dizolvăte într-o nouă  <span class="italic">cultură</span></p>
+      <p class="section-description mont">
+        Soroca este unul dintre orașele cele mai pitorești din Nordul Republicii Moldova. Aici sunt concentrate cele mai multe lucruri și locații care ne povestesc istoria neamului Molodvenesc ceea ce este cu desăvârșire un punct forte pentru iubitorii de călătorii locale.
+      </p>
+    </div>
+  <!-- Slider main container -->
+<div class="experience">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+      <img src="./img/lux.jpg" alt="">
+      <p class="slide-name">Cetatea Soroca</p>
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/double.jpg" alt="">
+      <p class="slide-name">Lumânarea Recunoștinței</p>
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/single.jpg" alt="">
+      <p class="slide-name">Râul Nistru</p>
+    </div>
+  </div>
+</div>
+</div>
+</section>
         <!-- End experience -->
         <!-- restaurant -->
-        
+        <section id="restaurant" class="section restaurant">
+  <div class="container restaurant__container">
+    <div class="section-info flex">
+      <p class="section-descriptor">Hotel central  -  Restaurant</p>
+      <p class="h2"><span class="italic">Înghite o porție</span>  adevărată de a fi <span class="italic">Moldovean</span> </p>
+      <p class="section-description mont">
+        Vă propunem să gustați un ansamblu de tradiții moldovenești transformate în mâncare care-ți trezește pofta de viață pentru a petrece clipe de neuitat și a simți gusturi de nedescris
+      </p>
+    </div>
+
+    <div class="swiper slider">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide overlay">
+          <div class="img-wrap">
+            <img src="./img/feature-slider_image.jpg" alt="">
+          </div>
+          <div class="slide-content">
+            <p class=" h3 heading">Ambinață</p>
+            <p class="content mont">Restaurantul vă poate pune la dispoziție bucate din gastronomia națională plină de gust și istorie care vă va prezenta ospitalitatea poporului moldav.</p>
+          </div>
+        </div>
+    
+        <div class="swiper-slide overlay">
+          <div class="img-wrap">
+            <img src="./img/feature-slider_image.jpg" alt="">
+          </div>
+          <div class="slide-content">
+            <p class=" h3 heading">Ambinață</p>
+            <p class="content mont">Restaurantul vă poate pune la dispoziție bucate din gastronomia națională plină de gust și istorie care vă va prezenta ospitalitatea poporului moldav.</p>
+          </div>
+        </div>
+    
+        <div class="swiper-slide overlay">
+          <div class="img-wrap">
+            <img src="./img/feature-slider_image2.jpg" alt="">
+          </div>
+          <div class="slide-content">
+            <p class=" h3 heading">Ambinață</p>
+            <p class="content mont">Restaurantul vă poate pune la dispoziție bucate din gastronomia națională plină de gust și istorie care vă va prezenta ospitalitatea poporului moldav.</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="controll-wrap">
+        <!-- If we need pagination -->
+      <div class="pagination"></div>
+      <!-- If we need navigation buttons -->
+      <div class="button-wrap"> 
+        <div class="button button-prev">
+          <span class="material-symbols-outlined">
+            chevron_left
+            </span>
+        </div>
+        <div class="button button-next">
+          <span class="material-symbols-outlined">
+            chevron_right
+            </span>
+        </div>
+      </div>
+      </div>
+    </div>
+
+  </div>
+</section>
         <!-- End restaurant -->
+        <!-- conference -->
+        <section id="conference" class="section conference">
+  <div class="container conference__container">
+    <div class="section-info flex">
+      <p class="section-descriptor">Hotel central  -  sala de conferințe</p>
+      <p class="h2"><span class="italic">Comfort</span> pentru orice <span class="italic">activitate</span>  </p>
+      <p class="section-description mont">
+        Vă propunem să gustați un ansamblu de tradiții moldovenești transformate în mâncare care-ți trezește pofta de viață pentru a petrece clipe de neuitat și a simți gusturi de nedescris
+      </p>
+    </div>
+
+    <div class="swiper slider">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide overlay">
+          <div class="img-wrap">
+            <img src="./img/feature-slider_image.jpg" alt="">
+          </div>
+        </div>
+    
+        <div class="swiper-slide overlay">
+          <div class="img-wrap">
+            <img src="./img/feature-slider_image.jpg" alt="">
+          </div>
+        </div>
+    
+        <div class="swiper-slide overlay">
+          <div class="img-wrap">
+            <img src="./img/feature-slider_image2.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    
+      <div class="controll-wrap">
+        <!-- If we need pagination -->
+      <div class="pagination"></div>
+      <!-- If we need navigation buttons -->
+      <div class="button-wrap"> 
+        <div class="button button-prev">
+          <span class="material-symbols-outlined">
+            chevron_left
+            </span>
+        </div>
+        <div class="button button-next">
+          <span class="material-symbols-outlined">
+            chevron_right
+            </span>
+        </div>
+      </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container features features__about flex">
+    <p class="section-descriptor">Dotarea camerei de conferență</p>
+    <div class="feature-list flex">
+
+      <div class="feature-item flex">
+        <p class="feature-name">Recepție 24/7</p>
+      </div>
+
+      <div class="feature-item flex">
+        <p class="feature-name">Duș</p>
+      </div>
+
+      <div class="feature-item flex">
+        <p class="feature-name">Televizor</p>
+      </div>
+
+      <div class="feature-item flex">
+        <p class="feature-name">Terasa comună</p>
+      </div>
+
+      <div class="feature-item flex">
+        <p class="feature-name">Pernă hipoalergică</p>
+      </div>
+
+      <div class="feature-item flex">
+        <p class="feature-name">Condiționer</p>
+      </div>
+
+      <div class="feature-item flex">
+        <p class="feature-name">Mini bar</p>
+      </div>
+
+      <div class="feature-item flex">
+        <p class="feature-name">Toaletă</p>
+      </div>
+
+      <div class="feature-item flex">
+        <p class="feature-name">Masă de lucru</p>
+      </div>
+
+      <div class="feature-item flex">
+        <p class="feature-name">Izolare fonică</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+        <!-- End conference -->
+        <!-- footer -->
+        <footer class="section footer">
+  <div class="container footer__container mont">
+
+    <div class="brand ">
+      <p class="h3 footer-logo">hotel central</p>
+      <p class="develop mont">
+        <a href="">developed by Evheny</a>
+      </p>
+    </div>
+
+    <div class="addres ">
+      <p class="footer__descr mont">Adressa</p>
+      <p class="footer__content mont ">Mihai Kogalniceanu 20, Soroca 3000</p>
+    </div>
+
+    <div class="contact">
+      <p class="footer__descr  mont">Recepție Cazare</p>
+      <div class="footer__content mont">
+        <a href="tel:+(373) 683-490-62">+(373) 683-490-62</a>
+      </div>
+    </div>
+
+    <div class="email">
+      <p class="footer__descr mont">Adressa</p>
+      <div class="footer__content mont">
+        <a href="mail:info@hotelcentral.md">info@hotelcentral.md</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+        <!-- End footer -->
 
     </main>
 

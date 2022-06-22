@@ -1,0 +1,35 @@
+.restaurant{
+  .swiper-slide{
+    position: relative;
+  }
+}
+
+.slide-content{
+  position: absolute;
+  top: 40%;
+  left: 40px;
+  right: auto;
+  z-index: 1;
+  color: $white;
+  max-width: 380px;
+  .content{
+    font-size: 14px;
+    font-weight: 300;
+  }
+}
+
+@include mobile{
+  
+  .slide-content{
+    top: 40%;
+    .content{
+      font-size: 12px;
+      padding-right: 10px;
+    }
+  }
+}
+
+.heading{
+  text-align: left;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,35 @@
+.experience{
+  overflow: hidden;
+  position: relative;
+  img{
+    max-height: 387px;
+  }
+
+}
+
+@include mobile{
+  .experience{
+    img{
+      height: 100vw;
+    }
+  }
+}
+
+@include tablet{
+  .experience{
+    img{
+      height: 60vw;
+    }
+  }
+}
+@include laptop{
+  .experience{
+    img{
+      height: 60vw;
+    }
+  }
+}
+.slide-name{
+  font-size: 16px;
+  padding-top: 20px;
+}
