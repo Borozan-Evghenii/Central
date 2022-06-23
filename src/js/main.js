@@ -2,6 +2,7 @@ const burger  = document.querySelector('.burger__mobile');
 const menu = document.querySelector('.nav-items__mobile');
 const body = document.querySelector('.body');
 const header = document.querySelector('.header');
+const hero = document.querySelector('.hero');
 
 
 burger.addEventListener('click', (e)=>{
@@ -9,11 +10,16 @@ burger.addEventListener('click', (e)=>{
   body.classList.toggle("scroll-none")
 });
 
-if (window.scrollY >= window.innerHeight ) {
-  header.classList.toggle("header__white")
-} else {
-  
-}
+window.addEventListener('scroll', (e)=>{
+  let scrollTop = window.scrollY;
+  // let scrollCenter = window.offsetHeight /2;
+  if (scrollTop > window.innerHeight ) {
+    header.classList.add("header__white")
+  } else {
+    header.classList.remove("header__white")
+  }
+})
+
 
 
 

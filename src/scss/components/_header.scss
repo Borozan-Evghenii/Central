@@ -7,6 +7,7 @@
   padding-top: 20px;
   padding-bottom: 20px;
   overflow: hidden;
+  transition: padding .8s;
 
 }
 
@@ -16,8 +17,12 @@
 }
 
 .logo-wrap{
+  a{
+    color: $accent;
+  }
   img{
     max-height: 80px;
+    transition: width .8s;
   }
 }
 
@@ -81,18 +86,28 @@
 
 .button-cta{
   display: flex;
+  gap: 10px;
+  position: relative;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  background-color: $accent;
-  color: $white;
+  padding: 15px;
+  color: $accent;
+  background-color: transparent;
   line-height: 1;
   text-transform: uppercase;
   letter-spacing: 2px;
-  border: none; 
+  border: none;
+  border-bottom: 1px solid $accent; 
+  transition: all .8s;
+  .btn-icon{
+    font-size: 18px;
+  }
   &:hover{
     cursor: pointer;
-    background-color: lighten($accent, .5);
+    gap: 15px;
+    color: $white;
+    border-color: $white;
+   
   } 
 }
 

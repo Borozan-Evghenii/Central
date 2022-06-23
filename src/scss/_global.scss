@@ -19,7 +19,17 @@ main{
 }
 
 .header__white{
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
     background-color: $white;
+    li{
+        a{
+            font-weight: 300 !important;
+        }
+    }
+    img{
+        width: 70px;
+    }
     a{
         filter: invert(100%);        
     }
