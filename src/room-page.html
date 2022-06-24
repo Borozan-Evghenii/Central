@@ -17,19 +17,34 @@
 </head>
 
 <body class="body">
+    <ul class="nav-items__mobile flex">
+        <li><a href="">cazare</a></li>
+        <li><a href="">bunăstare</a></li>
+        <li><a href="">experineță</a></li>
+        <li><a href="">restaurant</a></li>
+        <li><a href="">conferență</a></li>
+    </ul>
     <main class="wrapper">
 
         <!-- Header -->
         @include('./components/header.html')
         <!-- End Header -->
-        <!-- Header -->
-        @include('./components/hero.html')
-        <!-- End Header -->
+        <!-- Hero -->
+        @include('./components/room-page/room-hero.html')
+        <!-- End Hero -->
+        <!-- about -->
+        @include('./components/room-page/room-about.html')
+        <!-- End about -->
+        <!-- End conference -->
+        <!-- footer -->
+        @include('./components/footer.html')
+        <!-- End footer -->
 
     </main>
 
 
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vide/0.5.1/jquery.vide.js"></script>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>

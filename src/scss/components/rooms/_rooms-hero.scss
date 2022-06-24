@@ -1,0 +1,28 @@
+.room-page{
+  padding-top: 50px;
+}
+
+.rooms-params{
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  align-items: center;
+  gap: 80px;
+  margin-top: 40px;
+  .rooms-h3{
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-top: 10px;
+  }
+  .mont{
+    color: $accent;
+    text-transform: capitalize;
+  }
+}
+
+@include mobile{
+  .rooms-params{
+    row-gap: 20px;
+    justify-content: center;
+  }
+}
